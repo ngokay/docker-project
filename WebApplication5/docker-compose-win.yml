@@ -1,0 +1,50 @@
+version: '3.4'
+name: "build-api-test"
+services:
+  webapplication5:
+    image: ${DOCKER_REGISTRY-}webapplication5
+    build:
+      context: .
+      dockerfile: WebApplication5\Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5000 # the fix
+      - ASPNETCORE_HTTPS_PORTS=5001 # the fix
+      - ASPNETCORE_URLS=https://+:5001;http://+:5000
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Http:ro
+  redis:
+    image: redis:nanoserver
+    container_name: "redis-server"
+    restart: always
+    ports:
+      - "6379:6379"
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.1
+    container_name: es01
+    environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    networks:
+      - elastic
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.16.1
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_URL=http://localhost:9200
+    networks:
+      - elastic
+networks:
+  elastic:
+    driver: bridge

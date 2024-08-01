@@ -1,0 +1,92 @@
+2024-07-31 06:15:47.632 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-07-31 06:15:47.941 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-07-31 06:15:47.996 +00:00 [INF] Creating key {3dd7bfc9-e33b-40cb-9afb-8267afd36649} with creation date 2024-07-31 06:15:47Z, activation date 2024-07-31 06:15:47Z, and expiration date 2024-10-29 06:15:47Z.
+2024-07-31 06:15:48.084 +00:00 [WRN] No XML encryptor configured. Key {3dd7bfc9-e33b-40cb-9afb-8267afd36649} may be persisted to storage in unencrypted form.
+2024-07-31 06:15:48.105 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-3dd7bfc9-e33b-40cb-9afb-8267afd36649.xml'.
+2024-07-31 06:15:50.488 +00:00 [INF] Now listening on: https://[::]:5001
+2024-07-31 06:15:50.514 +00:00 [INF] Now listening on: http://[::]:5000
+2024-07-31 06:15:50.536 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-31 06:15:50.544 +00:00 [INF] Hosting environment: Development
+2024-07-31 06:15:50.553 +00:00 [INF] Content root path: /app/
+2024-07-31 06:15:51.926 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-31 06:15:53.001 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 1078.9295ms
+2024-07-31 06:15:53.407 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-31 06:15:53.892 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 485.6690ms
+2024-07-31 06:16:18.930 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50
+2024-07-31 06:16:19.259 +00:00 [INF] CORS policy execution successful.
+2024-07-31 06:16:19.273 +00:00 [INF] MyMiddleware executing..
+2024-07-31 06:16:19.278 +00:00 [INF] attribute : 
+2024-07-31 06:16:19.290 +00:00 [INF] MyMiddleware executing..
+2024-07-31 06:16:19.296 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-31 06:16:19.358 +00:00 [INF] MyMiddleware executing..
+2024-07-31 06:16:19.365 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-31 06:16:19.378 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-31 06:16:19.451 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-31 06:16:19.609 +00:00 [INF] Action login : da vao login
+2024-07-31 06:16:19.615 +00:00 [ERR] Action Error : Error
+2024-07-31 06:16:19.624 +00:00 [WRN] Action Warning : Warning
+2024-07-31 06:16:20.842 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Direct-QueueName-1, Exchange :Direct-Exchange , RoutingKey : Direct-RoutingKey-1
+2024-07-31 06:16:20.871 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Direct-QueueName-2, Exchange :Direct-Exchange , RoutingKey : Direct-RoutingKey-2
+2024-07-31 06:16:20.902 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-1, Exchange :Fanout-Exchange
+2024-07-31 06:16:20.938 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-2, Exchange :Fanout-Exchange
+2024-07-31 06:16:20.975 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-3, Exchange :Fanout-Exchange
+2024-07-31 06:16:21.010 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-4, Exchange :Fanout-Exchange
+2024-07-31 06:16:21.075 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-QueueName-1, Exchange :Topic-Exchange-1 , RoutingKey : Topic.*.Exchange-1
+2024-07-31 06:16:21.109 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-All-QueueName-1, Exchange :Topic-Exchange-1 , RoutingKey : #.Exchange-1
+2024-07-31 06:16:21.144 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-QueueName-2, Exchange :Topic-Exchange-2 , RoutingKey : Topic.*.Exchange-2
+2024-07-31 06:16:21.170 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-All-QueueName-2, Exchange :Topic-Exchange-2 , RoutingKey : #.Exchange-2
+2024-07-31 06:16:21.204 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Headers-QueueName-1, Exchange :Headers-Exchange , RoutingKey : Headers-Exchange-1
+2024-07-31 06:16:21.228 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Headers-QueueName-2, Exchange :Headers-Exchange , RoutingKey : Headers-Exchange-2
+2024-07-31 06:16:21.341 +00:00 [INF] Send message to rabbit succes
+2024-07-31 06:16:21.374 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-31 06:16:21.431 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 1965.0317ms
+2024-07-31 06:16:21.442 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-31 06:16:21.448 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50 - 401 - application/problem+json;+charset=utf-8 2518.2596ms
+2024-07-31 06:38:54.423 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-07-31 06:38:54.673 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-07-31 06:38:54.729 +00:00 [INF] Creating key {472337a8-eae4-479f-b0d1-27924acafc06} with creation date 2024-07-31 06:38:54Z, activation date 2024-07-31 06:38:54Z, and expiration date 2024-10-29 06:38:54Z.
+2024-07-31 06:38:54.866 +00:00 [WRN] No XML encryptor configured. Key {472337a8-eae4-479f-b0d1-27924acafc06} may be persisted to storage in unencrypted form.
+2024-07-31 06:38:54.903 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-472337a8-eae4-479f-b0d1-27924acafc06.xml'.
+2024-07-31 06:38:57.844 +00:00 [INF] Now listening on: https://[::]:5001
+2024-07-31 06:38:57.865 +00:00 [INF] Now listening on: http://[::]:5000
+2024-07-31 06:38:57.881 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-31 06:38:57.888 +00:00 [INF] Hosting environment: Development
+2024-07-31 06:38:57.896 +00:00 [INF] Content root path: /app/
+2024-07-31 06:38:59.198 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-31 06:39:00.032 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 841.5691ms
+2024-07-31 06:39:00.406 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-31 06:39:00.876 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 470.0368ms
+2024-07-31 06:39:07.222 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-31 06:39:07.230 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 8.7730ms
+2024-07-31 06:39:07.439 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-31 06:39:07.452 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 13.6703ms
+2024-07-31 06:39:17.377 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50
+2024-07-31 06:39:17.687 +00:00 [INF] CORS policy execution successful.
+2024-07-31 06:39:17.699 +00:00 [INF] MyMiddleware executing..
+2024-07-31 06:39:17.709 +00:00 [INF] attribute : 
+2024-07-31 06:39:17.722 +00:00 [INF] MyMiddleware executing..
+2024-07-31 06:39:17.728 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-31 06:39:17.801 +00:00 [INF] MyMiddleware executing..
+2024-07-31 06:39:17.808 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-31 06:39:17.825 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-31 06:39:17.902 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-31 06:39:18.063 +00:00 [INF] Action login : da vao login
+2024-07-31 06:39:18.070 +00:00 [ERR] Action Error : Error
+2024-07-31 06:39:18.077 +00:00 [WRN] Action Warning : Warning
+2024-07-31 06:39:19.132 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Direct-QueueName-1, Exchange :Direct-Exchange , RoutingKey : Direct-RoutingKey-1
+2024-07-31 06:39:19.171 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Direct-QueueName-2, Exchange :Direct-Exchange , RoutingKey : Direct-RoutingKey-2
+2024-07-31 06:39:19.218 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-1, Exchange :Fanout-Exchange
+2024-07-31 06:39:19.255 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-2, Exchange :Fanout-Exchange
+2024-07-31 06:39:19.284 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-3, Exchange :Fanout-Exchange
+2024-07-31 06:39:19.313 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Fanout-QueueName-4, Exchange :Fanout-Exchange
+2024-07-31 06:39:19.383 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-QueueName-1, Exchange :Topic-Exchange-1 , RoutingKey : Topic.*.Exchange-1
+2024-07-31 06:39:19.411 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-All-QueueName-1, Exchange :Topic-Exchange-1 , RoutingKey : #.Exchange-1
+2024-07-31 06:39:19.443 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-QueueName-2, Exchange :Topic-Exchange-2 , RoutingKey : Topic.*.Exchange-2
+2024-07-31 06:39:19.465 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Topic-All-QueueName-2, Exchange :Topic-Exchange-2 , RoutingKey : #.Exchange-2
+2024-07-31 06:39:19.515 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Headers-QueueName-1, Exchange :Headers-Exchange , RoutingKey : Headers-Exchange-1
+2024-07-31 06:39:19.538 +00:00 [INF] Connected RabbitMQ successfuly...Quêue : Headers-QueueName-2, Exchange :Headers-Exchange , RoutingKey : Headers-Exchange-2
+2024-07-31 06:39:19.634 +00:00 [INF] Send message to rabbit succes
+2024-07-31 06:39:19.665 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-31 06:39:19.718 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 1798.9546ms
+2024-07-31 06:39:19.728 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-31 06:39:19.734 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50 - 401 - application/problem+json;+charset=utf-8 2356.7947ms

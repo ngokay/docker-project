@@ -1,0 +1,256 @@
+2024-07-26 02:06:27.733 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-07-26 02:06:28.040 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-07-26 02:06:28.091 +00:00 [INF] Creating key {f2c6b04f-face-4f06-a432-883a86a58ba0} with creation date 2024-07-26 02:06:28Z, activation date 2024-07-26 02:06:28Z, and expiration date 2024-10-24 02:06:28Z.
+2024-07-26 02:06:28.839 +00:00 [WRN] No XML encryptor configured. Key {f2c6b04f-face-4f06-a432-883a86a58ba0} may be persisted to storage in unencrypted form.
+2024-07-26 02:06:28.906 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-f2c6b04f-face-4f06-a432-883a86a58ba0.xml'.
+2024-07-26 02:06:31.119 +00:00 [INF] Now listening on: https://[::]:5001
+2024-07-26 02:06:31.125 +00:00 [INF] Now listening on: http://[::]:5000
+2024-07-26 02:06:31.165 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-26 02:06:31.173 +00:00 [INF] Hosting environment: Development
+2024-07-26 02:06:31.183 +00:00 [INF] Content root path: /app/
+2024-07-26 02:06:36.083 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-26 02:06:36.831 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 789.6793ms
+2024-07-26 02:06:37.162 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-26 02:06:37.576 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 414.0244ms
+2024-07-26 02:06:52.114 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 02:06:52.572 +00:00 [INF] CORS policy execution successful.
+2024-07-26 02:06:52.585 +00:00 [INF] MyMiddleware executing..
+2024-07-26 02:06:52.590 +00:00 [INF] attribute : 
+2024-07-26 02:06:52.601 +00:00 [INF] MyMiddleware executing..
+2024-07-26 02:06:52.607 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 02:06:52.661 +00:00 [INF] MyMiddleware executing..
+2024-07-26 02:06:52.666 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 02:06:52.680 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 02:06:52.750 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 02:06:52.900 +00:00 [INF] Action login : da vao login
+2024-07-26 02:06:52.907 +00:00 [ERR] Action Error : Error
+2024-07-26 02:06:52.916 +00:00 [WRN] Action Warning : Warning
+2024-07-26 02:34:43.038 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-07-26 02:34:43.364 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-07-26 02:34:43.443 +00:00 [INF] Creating key {33fbed8f-2ea7-4407-8164-68c6e73752df} with creation date 2024-07-26 02:34:43Z, activation date 2024-07-26 02:34:43Z, and expiration date 2024-10-24 02:34:43Z.
+2024-07-26 02:34:43.626 +00:00 [WRN] No XML encryptor configured. Key {33fbed8f-2ea7-4407-8164-68c6e73752df} may be persisted to storage in unencrypted form.
+2024-07-26 02:34:43.693 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-33fbed8f-2ea7-4407-8164-68c6e73752df.xml'.
+2024-07-26 02:34:45.748 +00:00 [INF] Now listening on: https://[::]:5001
+2024-07-26 02:34:45.753 +00:00 [INF] Now listening on: http://[::]:5000
+2024-07-26 02:34:45.773 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-26 02:34:45.784 +00:00 [INF] Hosting environment: Development
+2024-07-26 02:34:45.790 +00:00 [INF] Content root path: /app/
+2024-07-26 02:34:46.791 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-26 02:34:47.392 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 617.8776ms
+2024-07-26 02:34:47.797 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-26 02:34:48.285 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 487.9639ms
+2024-07-26 02:35:00.545 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 02:35:00.847 +00:00 [INF] CORS policy execution successful.
+2024-07-26 02:35:00.862 +00:00 [INF] MyMiddleware executing..
+2024-07-26 02:35:00.868 +00:00 [INF] attribute : 
+2024-07-26 02:35:00.880 +00:00 [INF] MyMiddleware executing..
+2024-07-26 02:35:00.888 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 02:35:00.934 +00:00 [INF] MyMiddleware executing..
+2024-07-26 02:35:00.943 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 02:35:00.960 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 02:35:01.035 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 02:35:01.343 +00:00 [INF] Action login : da vao login
+2024-07-26 02:35:01.347 +00:00 [ERR] Action Error : Error
+2024-07-26 02:35:01.352 +00:00 [WRN] Action Warning : Warning
+2024-07-26 02:36:14.571 +00:00 [ERR] Send message to rabbit error : The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=403, text='ACCESS_REFUSED - queue name 'amq.gen-bKk-99eShv4JZaT9lhOt3g' contains reserved prefix 'amq.*'', classId=50, methodId=10
+2024-07-26 02:36:15.150 +00:00 [INF] Action login : xu ly xong login
+2024-07-26 02:36:15.199 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-26 02:36:15.276 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 74215.604ms
+2024-07-26 02:36:15.286 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 02:36:15.294 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54 - 200 - application/json;+charset=utf-8 74750.3058ms
+2024-07-26 06:18:28.442 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-07-26 06:18:28.670 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-07-26 06:18:28.736 +00:00 [INF] Creating key {30b53d16-6b4f-4c27-8a40-65a563ebb853} with creation date 2024-07-26 06:18:28Z, activation date 2024-07-26 06:18:28Z, and expiration date 2024-10-24 06:18:28Z.
+2024-07-26 06:18:28.887 +00:00 [WRN] No XML encryptor configured. Key {30b53d16-6b4f-4c27-8a40-65a563ebb853} may be persisted to storage in unencrypted form.
+2024-07-26 06:18:28.928 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-30b53d16-6b4f-4c27-8a40-65a563ebb853.xml'.
+2024-07-26 06:18:30.983 +00:00 [INF] Now listening on: https://[::]:5001
+2024-07-26 06:18:30.996 +00:00 [INF] Now listening on: http://[::]:5000
+2024-07-26 06:18:31.016 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-26 06:18:31.026 +00:00 [INF] Hosting environment: Development
+2024-07-26 06:18:31.041 +00:00 [INF] Content root path: /app/
+2024-07-26 06:18:33.982 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2024-07-26 06:18:34.217 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 245.6084ms
+2024-07-26 06:18:34.240 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-26 06:18:34.851 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 610.8847ms
+2024-07-26 06:18:35.447 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-26 06:18:35.936 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 488.8588ms
+2024-07-26 06:18:49.485 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 06:18:50.499 +00:00 [INF] CORS policy execution successful.
+2024-07-26 06:18:50.537 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:18:50.667 +00:00 [INF] attribute : 
+2024-07-26 06:18:50.700 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:18:50.715 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 06:18:50.884 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:18:50.895 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 06:18:50.921 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:18:51.106 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 06:18:52.094 +00:00 [INF] Action login : da vao login
+2024-07-26 06:18:52.101 +00:00 [ERR] Action Error : Error
+2024-07-26 06:18:52.116 +00:00 [WRN] Action Warning : Warning
+2024-07-26 06:18:53.612 +00:00 [INF] Send message to rabbit succes
+2024-07-26 06:18:53.839 +00:00 [INF] Action login : xu ly xong login
+2024-07-26 06:18:53.886 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-26 06:18:53.962 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 2787.5019ms
+2024-07-26 06:18:53.973 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:18:53.978 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54 - 200 - application/json;+charset=utf-8 4493.5687ms
+2024-07-26 06:19:26.693 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 06:19:26.807 +00:00 [INF] CORS policy execution successful.
+2024-07-26 06:19:27.059 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:19:27.068 +00:00 [INF] attribute : 
+2024-07-26 06:19:27.076 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:19:27.093 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 06:19:27.103 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:19:27.117 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 06:19:27.138 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:19:27.158 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 06:19:27.195 +00:00 [INF] Action login : da vao login
+2024-07-26 06:19:27.214 +00:00 [ERR] Action Error : Error
+2024-07-26 06:19:27.221 +00:00 [WRN] Action Warning : Warning
+2024-07-26 06:20:22.428 +00:00 [INF] Send message to rabbit succes
+2024-07-26 06:20:29.133 +00:00 [INF] Action login : xu ly xong login
+2024-07-26 06:20:29.210 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-26 06:20:29.366 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 62172.3193ms
+2024-07-26 06:20:29.454 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:20:29.557 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54 - 200 - application/json;+charset=utf-8 62838.8148ms
+2024-07-26 06:21:57.734 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-26 06:21:57.846 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 132.3577ms
+2024-07-26 06:21:58.118 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-26 06:21:58.289 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.2511ms
+2024-07-26 06:22:04.200 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 06:22:04.324 +00:00 [INF] CORS policy execution successful.
+2024-07-26 06:22:04.332 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:22:04.338 +00:00 [INF] attribute : 
+2024-07-26 06:22:04.343 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:22:04.352 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 06:22:04.357 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:22:04.365 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 06:22:04.372 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:22:04.385 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 06:22:04.405 +00:00 [INF] Action login : da vao login
+2024-07-26 06:22:04.409 +00:00 [ERR] Action Error : Error
+2024-07-26 06:22:04.417 +00:00 [WRN] Action Warning : Warning
+2024-07-26 06:23:01.111 +00:00 [INF] Send message to rabbit succes
+2024-07-26 06:23:05.221 +00:00 [INF] Action login : xu ly xong login
+2024-07-26 06:23:05.228 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-26 06:23:05.237 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 60848.2833ms
+2024-07-26 06:23:05.246 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:23:05.252 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54 - 200 - application/json;+charset=utf-8 61051.8428ms
+2024-07-26 06:25:40.571 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 06:25:40.584 +00:00 [INF] CORS policy execution successful.
+2024-07-26 06:25:40.606 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:25:40.618 +00:00 [INF] attribute : 
+2024-07-26 06:25:40.629 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:25:40.636 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 06:25:40.645 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:25:40.652 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 06:25:40.661 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:25:40.668 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 06:25:40.679 +00:00 [INF] Action login : da vao login
+2024-07-26 06:25:40.685 +00:00 [ERR] Action Error : Error
+2024-07-26 06:25:40.692 +00:00 [WRN] Action Warning : Warning
+2024-07-26 06:25:48.175 +00:00 [INF] Send message to rabbit succes
+2024-07-26 06:25:51.759 +00:00 [INF] Action login : xu ly xong login
+2024-07-26 06:25:51.765 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-26 06:25:51.773 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 11095.2406ms
+2024-07-26 06:25:51.803 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:25:51.823 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54 - 200 - application/json;+charset=utf-8 11254.1681ms
+2024-07-26 06:30:01.967 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54
+2024-07-26 06:30:02.002 +00:00 [INF] CORS policy execution successful.
+2024-07-26 06:30:02.014 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:30:02.021 +00:00 [INF] attribute : 
+2024-07-26 06:30:02.031 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:30:02.039 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 06:30:02.049 +00:00 [INF] MyMiddleware executing..
+2024-07-26 06:30:02.055 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 06:30:02.066 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:30:02.073 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 06:30:02.082 +00:00 [INF] Action login : da vao login
+2024-07-26 06:30:02.092 +00:00 [ERR] Action Error : Error
+2024-07-26 06:30:02.102 +00:00 [WRN] Action Warning : Warning
+2024-07-26 06:30:09.150 +00:00 [INF] Send message to rabbit succes
+2024-07-26 06:30:10.190 +00:00 [INF] Action login : xu ly xong login
+2024-07-26 06:30:10.200 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-26 06:30:10.207 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 8125.0493ms
+2024-07-26 06:30:10.215 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 06:30:10.241 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 54 - 200 - application/json;+charset=utf-8 8273.9655ms
+2024-07-26 07:35:51.682 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-07-26 07:35:52.053 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-07-26 07:35:52.099 +00:00 [INF] Creating key {189a3e64-0cc8-41ca-bd2c-754aba61a9a9} with creation date 2024-07-26 07:35:52Z, activation date 2024-07-26 07:35:52Z, and expiration date 2024-10-24 07:35:52Z.
+2024-07-26 07:35:52.249 +00:00 [WRN] No XML encryptor configured. Key {189a3e64-0cc8-41ca-bd2c-754aba61a9a9} may be persisted to storage in unencrypted form.
+2024-07-26 07:35:52.307 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-189a3e64-0cc8-41ca-bd2c-754aba61a9a9.xml'.
+2024-07-26 07:35:56.177 +00:00 [INF] Now listening on: https://[::]:5001
+2024-07-26 07:35:56.189 +00:00 [INF] Now listening on: http://[::]:5000
+2024-07-26 07:35:56.236 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-26 07:35:56.248 +00:00 [INF] Hosting environment: Development
+2024-07-26 07:35:56.257 +00:00 [INF] Content root path: /app/
+2024-07-26 07:35:58.177 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger - -
+2024-07-26 07:35:59.115 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger - - - 301 0 - 950.0395ms
+2024-07-26 07:35:59.153 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger/index.html - -
+2024-07-26 07:36:00.530 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger/index.html - - - 200 - text/html;charset=utf-8 1377.2536ms
+2024-07-26 07:36:00.709 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger/swagger-ui-standalone-preset.js - -
+2024-07-26 07:36:00.717 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger/swagger-ui-bundle.js - -
+2024-07-26 07:36:00.717 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger/swagger-ui.css - -
+2024-07-26 07:36:01.435 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-07-26 07:36:01.435 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-07-26 07:36:01.522 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger/swagger-ui.css - - - 200 143632 text/css 804.4589ms
+2024-07-26 07:36:01.522 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 813.1643ms
+2024-07-26 07:36:01.632 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-07-26 07:36:01.645 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 927.8979ms
+2024-07-26 07:36:02.292 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger/v1/swagger.json - -
+2024-07-26 07:36:02.383 +00:00 [INF] Request starting HTTP/2 GET https://localhost:60397/swagger/favicon-32x32.png - -
+2024-07-26 07:36:02.408 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-07-26 07:36:02.421 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger/favicon-32x32.png - - - 200 628 image/png 37.6123ms
+2024-07-26 07:36:02.714 +00:00 [INF] Request finished HTTP/2 GET https://localhost:60397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 422.4073ms
+2024-07-26 07:36:06.904 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2024-07-26 07:36:06.913 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 8.6885ms
+2024-07-26 07:36:07.204 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2024-07-26 07:36:07.218 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.2568ms
+2024-07-26 07:36:24.105 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50
+2024-07-26 07:36:24.681 +00:00 [INF] CORS policy execution successful.
+2024-07-26 07:36:24.696 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:36:24.703 +00:00 [INF] attribute : 
+2024-07-26 07:36:24.717 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:36:24.725 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 07:36:24.801 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:36:24.809 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 07:36:24.833 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 07:36:24.943 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 07:36:25.109 +00:00 [INF] Action login : da vao login
+2024-07-26 07:36:25.117 +00:00 [ERR] Action Error : Error
+2024-07-26 07:36:25.127 +00:00 [WRN] Action Warning : Warning
+2024-07-26 07:36:32.018 +00:00 [INF] Send message to rabbit succes
+2024-07-26 07:36:32.053 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-26 07:36:32.172 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 7182.5591ms
+2024-07-26 07:36:32.187 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 07:36:32.195 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50 - 401 - application/problem+json;+charset=utf-8 8090.5261ms
+2024-07-26 07:37:06.464 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50
+2024-07-26 07:37:06.499 +00:00 [INF] CORS policy execution successful.
+2024-07-26 07:37:06.505 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:37:06.517 +00:00 [INF] attribute : 
+2024-07-26 07:37:06.525 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:37:06.538 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 07:37:06.545 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:37:06.555 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 07:37:06.568 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 07:37:06.575 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 07:37:06.585 +00:00 [INF] Action login : da vao login
+2024-07-26 07:37:06.594 +00:00 [ERR] Action Error : Error
+2024-07-26 07:37:06.611 +00:00 [WRN] Action Warning : Warning
+2024-07-26 07:37:14.599 +00:00 [INF] Send message to rabbit succes
+2024-07-26 07:37:14.608 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-26 07:37:14.618 +00:00 [INF] Executed action WebApplication5.Controllers.LoginController.Login (WebApplication5) in 8034.4808ms
+2024-07-26 07:37:14.650 +00:00 [INF] Executed endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 07:37:14.659 +00:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50 - 401 - application/problem+json;+charset=utf-8 8195.5569ms
+2024-07-26 07:37:24.113 +00:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/v1/Login/login application/json 50
+2024-07-26 07:37:24.136 +00:00 [INF] CORS policy execution successful.
+2024-07-26 07:37:24.163 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:37:24.176 +00:00 [INF] attribute : 
+2024-07-26 07:37:24.183 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:37:24.193 +00:00 [INF] attribute : WebApplication5.Attributes.RevockTokenAttribute
+2024-07-26 07:37:24.200 +00:00 [INF] MyMiddleware executing..
+2024-07-26 07:37:24.210 +00:00 [INF] attribute : WebApplication5.Attributes.AccessDeniedAttribute
+2024-07-26 07:37:24.216 +00:00 [INF] Executing endpoint 'WebApplication5.Controllers.LoginController.Login (WebApplication5)'
+2024-07-26 07:37:24.228 +00:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WebApplication5.Authentication.LoginDTO) on controller WebApplication5.Controllers.LoginController (WebApplication5).
+2024-07-26 07:37:24.235 +00:00 [INF] Action login : da vao login
+2024-07-26 07:37:24.246 +00:00 [ERR] Action Error : Error
+2024-07-26 07:37:24.252 +00:00 [WRN] Action Warning : Warning

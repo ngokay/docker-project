@@ -1,0 +1,102 @@
+version: '3.4'
+name: build-app-test
+services:
+  webapplication5:
+    image: ${DOCKER_REGISTRY-}webapplication5
+    build:
+      context: .
+      dockerfile: WebApplication5/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5000 # the fix
+      - ASPNETCORE_HTTPS_PORTS=5001 # the fix
+      - ASPNETCORE_URLS=https://+:5001;http://+:5000
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    volumes:
+      - test_volume:/backup/webapplication5
+    networks:
+      - elastic
+    depends_on:
+      - redis
+      - rabbitmq
+  redis:
+    image: redis
+    container_name: "redis-server"
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - elastic
+    volumes:
+      - test_volume:/backup/redis
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.1
+    container_name: es01
+    ports:
+      - 9200:9200
+    environment:
+      - xpack.monitoring.enabled=true
+      - xpack.watcher.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    networks:
+      - elastic
+    volumes:
+      - test_volume:/backup/elasticsearch
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.16.1
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_URL=http://es01:9200
+    networks:
+      - elastic
+    depends_on:
+      - elasticsearch
+    volumes:
+      - test_volume:/backup/kibana
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: 'rabbitmq-server'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - test_volume:/var/lib/rabbitmq/
+      - test_volume:/var/log/rabbitmq
+    environment:
+      # The location of the RabbitMQ server.  "amqp" is the protocol;
+      # "rabbitmq" is the hostname.  Note that there is not a guarantee
+      # that the server will start first!  Telling the pika client library
+      # to try multiple times gets around this ordering issue.
+      - AMQP_URL=amqp://guest:guest@rabbitmq-server:5672
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      - elastic
+
+  consumer:
+    image: ${DOCKER_REGISTRY-}consumer
+    build:
+      context: .
+      dockerfile: Consumer/Dockerfile
+    volumes:
+      - test_volume:/backup/consumer
+    networks:
+      - elastic
+    depends_on:
+      - rabbitmq
+      - webapplication5
+    links:
+      - rabbitmq
+      - webapplication5
+networks:
+  elastic:
+    driver: bridge
+volumes:
+  test_volume:
+    name: "volume-test"
