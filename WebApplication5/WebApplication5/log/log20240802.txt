@@ -1,0 +1,36 @@
+2024-08-02 16:20:38.773 +07:00 [INF] User profile is available. Using 'C:\Users\NgoAnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:20:46.736 +07:00 [INF] Now listening on: https://localhost:7114
+2024-08-02 16:20:46.742 +07:00 [INF] Now listening on: http://localhost:5114
+2024-08-02 16:20:46.751 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 16:20:46.755 +07:00 [INF] Hosting environment: Development
+2024-08-02 16:20:46.761 +07:00 [INF] Content root path: C:\Users\NgoAnh\Documents\docker-project\WebApplication5\WebApplication5\
+2024-08-02 16:22:31.557 +07:00 [INF] User profile is available. Using 'C:\Users\NgoAnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:22:38.776 +07:00 [INF] Now listening on: https://localhost:7114
+2024-08-02 16:22:38.782 +07:00 [INF] Now listening on: http://localhost:5114
+2024-08-02 16:22:38.791 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 16:22:38.798 +07:00 [INF] Hosting environment: Development
+2024-08-02 16:22:38.802 +07:00 [INF] Content root path: C:\Users\NgoAnh\Documents\docker-project\WebApplication5\WebApplication5\
+2024-08-02 16:23:02.000 +07:00 [INF] User profile is available. Using 'C:\Users\NgoAnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:23:09.244 +07:00 [INF] Now listening on: https://localhost:7114
+2024-08-02 16:23:09.249 +07:00 [INF] Now listening on: http://localhost:5114
+2024-08-02 16:23:09.259 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 16:23:09.265 +07:00 [INF] Hosting environment: Development
+2024-08-02 16:23:09.269 +07:00 [INF] Content root path: C:\Users\NgoAnh\Documents\docker-project\WebApplication5\WebApplication5\
+2024-08-02 16:23:57.941 +07:00 [INF] User profile is available. Using 'C:\Users\NgoAnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:24:05.216 +07:00 [INF] Now listening on: https://localhost:7114
+2024-08-02 16:24:05.221 +07:00 [INF] Now listening on: http://localhost:5114
+2024-08-02 16:24:05.230 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 16:24:05.235 +07:00 [INF] Hosting environment: Development
+2024-08-02 16:24:05.239 +07:00 [INF] Content root path: C:\Users\NgoAnh\Documents\docker-project\WebApplication5\WebApplication5\
+2024-08-02 16:24:27.067 +07:00 [INF] User profile is available. Using 'C:\Users\NgoAnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:24:34.546 +07:00 [INF] Now listening on: https://localhost:7114
+2024-08-02 16:24:34.553 +07:00 [INF] Now listening on: http://localhost:5114
+2024-08-02 16:24:34.562 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 16:24:34.569 +07:00 [INF] Hosting environment: Development
+2024-08-02 16:24:34.573 +07:00 [INF] Content root path: C:\Users\NgoAnh\Documents\docker-project\WebApplication5\WebApplication5\
+2024-08-02 16:24:55.632 +07:00 [INF] User profile is available. Using 'C:\Users\NgoAnh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:25:02.858 +07:00 [INF] Now listening on: https://localhost:7114
+2024-08-02 16:25:02.863 +07:00 [INF] Now listening on: http://localhost:5114
+2024-08-02 16:25:02.873 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 16:25:02.877 +07:00 [INF] Hosting environment: Development
+2024-08-02 16:25:02.881 +07:00 [INF] Content root path: C:\Users\NgoAnh\Documents\docker-project\WebApplication5\WebApplication5\

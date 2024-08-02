@@ -204,6 +204,17 @@ namespace WebApplication5.Controllers
 
         public IActionResult RefreshToken(string refreshToken)
         {
+            // test single threading
+            Console.WriteLine("Start single thread");
+            Thread singleThreading = new Thread(new ThreadStart(FunctionSingleThreading));
+            singleThreading.Start();
+            Console.WriteLine("End single thread");
+            
+
+            Console.WriteLine("Start multiple thread");
+            MyAsyncFunction();
+            Console.WriteLine("End multiple thread");
+
             string refreshTokenKey = configuration["jwt:refreshToken"];
             if (refreshToken.Equals(refreshTokenKey))
             {
@@ -223,6 +234,12 @@ namespace WebApplication5.Controllers
 
             }
             return BadRequest();
+
+            async Task MyAsyncFunction()
+            {
+                await Task.Run(() => FunctionSingleThreading());
+                await Task.Run(() => FunctionMultiThreading());
+            }
         }
 
         [HttpPost("revock-token")]
@@ -314,16 +331,36 @@ namespace WebApplication5.Controllers
             }
         }
 
+        /// <summary>
+        /// Test tham chiếu, ref and out
+        /// </summary>
+        /// <param name="a"></param>
         private void SumToTal(ref int a)
         {
             a++;
         }
-
+        /// <summary>
+        /// Test tham chiếu, ref and out
+        /// </summary>
+        /// <param name="b"></param>
         private void CheckOut(out int b)
         {
             b = 1;
             b++;
         }
-        
+
+        private void FunctionSingleThreading()
+        {
+            Thread.Sleep(3 * 60*1000);
+            Console.WriteLine($"Test single threading");
+        }
+
+        private void FunctionMultiThreading()
+        {
+            Thread.Sleep(6 * 60 * 1000);
+            Console.WriteLine($"Test multiple threading");
+        }
+
+
     }
 }
