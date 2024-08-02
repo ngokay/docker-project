@@ -21,36 +21,32 @@ namespace WebApplication5.RabbitMQ
         {
             try
             {
-                using (var channel = _connectionRabbitMQHepperExtension.Connect())
-                {
+                var channel = _connectionRabbitMQHepperExtension.Connect();
+                ConnectionRabbitMQHepperExtension.QueueName.Keys.ToList().ForEach(key => {
 
-                    ConnectionRabbitMQHepperExtension.QueueName.Keys.ToList().ForEach(key => {
+                    var messages = msgs[key].ToList();
 
-                        var messages = msgs[key].ToList();
+                    messages.ForEach(msgs =>
+                    {
+                        string routingKey = msgs.GetType().GetProperty("RoutingKey").GetValue(msgs, null);
+                        string exchangeName = msgs.GetType().GetProperty("ExchangeName").GetValue(msgs, null);
+                        string msg = JsonConvert.SerializeObject(msgs.GetType().GetProperty("Msg").GetValue(msgs, null));
+                        var body = Encoding.UTF8.GetBytes(msg);
 
-                        messages.ForEach(msgs =>
-                        {
-                            string routingKey = msgs.GetType().GetProperty("RoutingKey").GetValue(msgs, null);
-                            string exchangeName = msgs.GetType().GetProperty("ExchangeName").GetValue(msgs, null);
-                            string msg = JsonConvert.SerializeObject(msgs.GetType().GetProperty("Msg").GetValue(msgs, null));
-                            var body = Encoding.UTF8.GetBytes(msg);
+                        // đánh dấu tin nhắn là liên tục
+                        var properties = channel.CreateBasicProperties();
+                        properties.Persistent = true;
 
-                            // đánh dấu tin nhắn là liên tục
-                            var properties = channel.CreateBasicProperties();
-                            properties.Persistent = true;
-
-                            channel.BasicPublish(
-                                exchange: exchangeName,
-                                routingKey: routingKey,
-                                basicProperties: properties,
-                                body: body
-                            );
-
-                        });
+                        channel.BasicPublish(
+                            exchange: exchangeName,
+                            routingKey: routingKey,
+                            basicProperties: properties,
+                            body: body
+                        );
 
                     });
 
-                }
+                });
 
                 logger.LogInformation("Send message to rabbit succes");
             }
@@ -64,21 +60,21 @@ namespace WebApplication5.RabbitMQ
         {
             try
             {
-                using (var channel = _connectionRabbitMQHepper.Connect())
-                {
-                    string bodyMsg = JsonConvert.SerializeObject(message);
 
-                    var body = Encoding.UTF8.GetBytes(bodyMsg);
-                    channel.BasicPublish(
-                        exchange: ConnectionRabbitMQHepper.ExchangeName,
-                        routingKey: ConnectionRabbitMQHepper.RoutingWeatherForecast,
-                        basicProperties: null,
-                        body: body
-                    );
+                var channel = _connectionRabbitMQHepper.Connect();
+                string bodyMsg = JsonConvert.SerializeObject(message);
+                var properties = channel.CreateBasicProperties();
+                properties.Persistent = true;
 
-                }
+                var body = Encoding.UTF8.GetBytes(bodyMsg);
+                channel.BasicPublish(
+                    exchange: ConnectionRabbitMQHepper.ExchangeName,
+                    routingKey: ConnectionRabbitMQHepper.RoutingWeatherForecast,
+                    basicProperties: properties,
+                    body: body
+                );
 
-                logger.LogInformation("Send message to rabbit succes");
+                //logger.LogInformation("Send message to rabbit succes");
             }
             catch (Exception ex)
             {

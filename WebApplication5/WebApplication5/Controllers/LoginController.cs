@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
@@ -140,17 +141,36 @@ namespace WebApplication5.Controllers
             logger.LogWarning("Action Warning : Warning");
             Console.WriteLine("Action console : WriteLine");
             Console.Write("Action console Write : Write");
-
-            for (int i = 0; i < 2; i++)
+            
+            int countLoop = 10000;
+            IList<dynamic> lstMsg = new List<dynamic>();
+            for (int i = 0; i < countLoop; i++)
             {
                 dynamic msg = new
                 {
                     name = "abc " + i,
                     msg = "Test send message to RabbitMQ " + i
                 };
-
-                sendMessage.Send(msg);
+                lstMsg.Add(msg);
+                
             }
+            var watch = Stopwatch.StartNew();
+            foreach (var item in lstMsg)
+            {
+                sendMessage.Send(item);
+            }
+
+            watch.Stop();
+
+            Console.WriteLine($"Loop count foreach | Total time : {countLoop} | Time Taken : {watch.ElapsedMilliseconds} ms.");
+            var watchParallel = Stopwatch.StartNew();
+            Parallel.ForEach(lstMsg, msg => {
+                sendMessage.Send(msg);
+            });
+
+            watchParallel.Stop();
+            Console.WriteLine($"Loop count Parallel | Total time : {countLoop} | Time Taken : {watchParallel.ElapsedMilliseconds} ms.");
+
             sendMessage.CreateQueue(msg);
             try
             {

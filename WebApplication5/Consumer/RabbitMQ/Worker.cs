@@ -22,7 +22,7 @@ namespace Consumer.RabbitMQ
         public override Task StartAsync(CancellationToken cancellationToken)
         {
             _channel = _rabbitMQClientService.Connect();
-            _channel.BasicQos(0, 1, false);
+            _channel.BasicQos(0, 1, false); // đảm bảo xử lý 1 tin nhắn xong mới gửi tiếp tin nhắn vào consumer
             return base.StartAsync(cancellationToken);
         }
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
