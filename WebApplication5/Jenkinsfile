@@ -12,7 +12,7 @@ pipeline{
 
         stage("verify tooling"){
             steps{
-                sh '''
+                bat '''
                 docker version
                 docker info
                 docker-compose version
@@ -21,14 +21,14 @@ pipeline{
         }
         stage("Prune docker data"){
             steps{
-                sh 'docker system prune -a --volumes -f'
+                bat 'docker system prune -a --volumes -f'
             }
         }
 
         stage("Start container"){
             steps{
-                sh 'docker-compose up -d --no-color --wait'
-                sh 'docker-compose ps'
+                bat 'docker-compose up -d --no-color --wait'
+                bat 'docker-compose ps'
             }
         }
 
@@ -36,8 +36,8 @@ pipeline{
     post{
         always{
             echo "========always========"
-            sh 'docker-compose down --remove-orphans -v'
-            sh 'docker-compose ps'
+            bat 'docker-compose down --remove-orphans -v'
+            bat 'docker-compose ps'
         }
         success{
             echo "========pipeline executed successfully ========"
