@@ -42,7 +42,7 @@ pipeline{
     post{
         always{
             echo "========always========"
-            bat 'docker-compose down --remove-orphans -v'
+            bat 'docker-compose down -v'
             bat 'docker-compose ps'
         }
         success{
