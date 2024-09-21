@@ -15,7 +15,7 @@ pipeline{
                 sh '''
                 docker version
                 docker info
-                docker compose version
+                docker-compose version
                 '''
             }
         }
@@ -27,8 +27,8 @@ pipeline{
 
         stage("Start container"){
             steps{
-                sh 'docker compose up -d --no-color --wait'
-                sh 'docker compose ps'
+                sh 'docker-compose up -d --no-color --wait'
+                sh 'docker-compose ps'
             }
         }
 
@@ -36,8 +36,8 @@ pipeline{
     post{
         always{
             echo "========always========"
-            sh 'docker compose down --remove-orphans -v'
-            sh 'docker compose ps'
+            sh 'docker-compose down --remove-orphans -v'
+            sh 'docker-compose ps'
         }
         success{
             echo "========pipeline executed successfully ========"
