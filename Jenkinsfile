@@ -28,8 +28,9 @@ pipeline{
 
         stage("Start container"){
             steps{
-                bat '.\\WebApplication5 docker-compose up -d --no-color --wait'
-                bat '.\\WebApplication5 docker-compose ps'
+                bat 'cd .\\WebApplication5'
+                bat 'docker-compose up -d --no-color --wait'
+                bat 'docker-compose ps'
             }
         }
         stage("Run test"){
@@ -42,8 +43,9 @@ pipeline{
     post{
         always{
             echo "========always========"
-            bat '.\\WebApplication5 docker-compose down --remove-orphans -v'
-            bat '.\\WebApplication5 docker-compose ps'
+            bat 'cd .\\WebApplication5'
+            bat 'docker-compose down --remove-orphans -v'
+            bat 'docker-compose ps'
         }
         success{
             echo "========pipeline executed successfully ========"
