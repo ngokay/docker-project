@@ -1,7 +1,6 @@
 pipeline{
     environment{
         DOCKER_IMAGE = "anhnt/testcicd-docker"
-        URL = ".\\WebApplication5"
     }
     agent none
     stages{
