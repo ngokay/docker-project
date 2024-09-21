@@ -3,7 +3,7 @@ pipeline{
         DOCKER_IMAGE = "anhnt/testcicd-docker"
     }
     agent {
-        lable 'test'
+        lable 'none'
     }
     stages{
         stage("Test"){
