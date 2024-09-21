@@ -28,7 +28,7 @@ pipeline{
 
         stage("Start container"){
             steps{
-                bat 'docker-compose up'
+                bat 'docker-compose up -d --no-color --wait'
                 bat 'docker-compose ps'
             }
         }
@@ -42,7 +42,7 @@ pipeline{
     post{
         always{
             echo "========always========"
-            bat 'docker-compose down'
+            bat 'docker-compose down --remove-orphans -v'
             bat 'docker-compose ps'
         }
         success{
