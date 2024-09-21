@@ -1,0 +1,53 @@
+pipeline{
+    environment{
+        DOCKER_IMAGE = "anhnt/testcicd-docker"
+    }
+    agent{
+        label "none"
+    }
+    stages{
+        stage("Test"){
+            steps{
+                echo "========executing A========"
+            }
+        }
+
+        stage("verify tooling"){
+            steps{
+                sh '''
+                docker version
+                docker info
+                docker compose version
+                curl --version
+                jq --version
+                '''
+            }
+        }
+        stage("Prune docker data"){
+            steps{
+                sh 'docker system prune -a --volumes -f'
+            }
+        }
+
+        stage("Start container"){
+            steps{
+                sh 'docker compose up -d --no-color --wait'
+                sh 'docker compose ps'
+            }
+        }
+
+    }
+    post{
+        always{
+            echo "========always========"
+            sh 'docker compose down --remove-orphans -v'
+            sh 'docker compose ps'
+        }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }
+    }
+}
